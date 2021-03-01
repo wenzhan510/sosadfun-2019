@@ -1,0 +1,125 @@
+.login{
+
+    font-size: var(--font-size-14);
+    font-family: var(--font-family-regular);
+    height: 100%;
+    margin-bottom: 0px;
+
+    .close {
+        margin: 20px 0 0 20px;
+    }
+
+
+    @media screen and (min-width: 330px) { 
+        .inputbox {
+            background-color:var(--color-bg-base);
+            border-radius: var(--radius-biggest);
+            height: 38px;
+            width: 306px;
+            margin: 12px auto 0px auto;
+        }
+        .regisbox {
+            height: 38px;
+            width: 306px;
+            margin: 12px auto 12px auto;
+        }
+        
+        .error {
+            width: 306px;
+            margin: 4px auto 0px auto;
+            padding-left: 20px;
+            font-size: var(--font-size-10);
+            color: var(--color-primary);
+            border-top: none;
+        }
+        .forgot-password{ 
+            color: var(--color-primary);
+            margin-left: 180px;
+        }
+
+        .button-div{
+            margin: 24px auto 12px auto;
+            width: 306px;
+        }
+    }
+
+    @media screen and (max-width: 329px) { 
+        .inputbox {
+            background-color:var(--color-bg-base);
+            border-radius: var(--radius-biggest);
+            height: 38px;
+            width: 100%;
+            margin: 12px auto 0px auto;
+        }
+        .regisbox {
+            height: 38px;
+            width: 100%;
+            margin: 12px auto 12px auto;
+        }
+
+        .error {
+            width: 100%;
+            margin: 4px auto 0px auto;
+            padding-left: 20px;
+            font-size: var(--font-size-10);
+            color: var(--color-primary);
+            border-top: none;
+        }
+
+        .forgot-password{ 
+            color: var(--color-primary);
+            margin-left:50%;
+        }
+
+        .button-div{
+            margin: 24px auto 12px auto;
+            width: 100%;
+        }
+    }
+
+
+
+    .textfield {
+        margin: 12px 9px 12px 16px;
+        display: inline-block;
+        line-height: 14px;
+    }
+
+    .dividing-line {
+        display: inline-block;
+        line-height: 25px;
+        font-size: var(--font-size-18);
+        font-family: var(--font-family-light);
+
+    }
+
+    .inputfield {
+        background-color: var(--color-bg-base);
+        margin: 9px;
+        font-size: var(--font-size-2);
+    }
+
+    .login-logo {
+        width: 72px;
+        height: 72px;
+        margin: 100px auto 48px auto;
+        background-size: 72px 72px;
+        background-image:url("../../../../assets/login-logo.jpg");
+    }
+
+    .card-footer {
+        width: 120px;
+        bottom: 20px;
+        left: 0px;
+        right: 0px;
+        color: var(--color-font-light);
+        position: absolute;
+        font-size: var(--font-size-10);
+        margin: auto;
+    }
+    .register {
+        color: var(--color-font);
+        font-family: var(--font-family-bold);
+        margin-left: 12px;
+    }
+}

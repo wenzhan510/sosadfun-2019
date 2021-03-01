@@ -1,0 +1,43 @@
+.components-common-input-text {
+    .container {
+        background-color: #f4f5f9;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        .label {
+            padding-right: 10px;
+        }
+        .text-box {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: 0 0 0 0 !important;
+            resize: none !important;
+            flex: 1;
+        }
+    }
+    .container.input-text-style-wide {
+        padding: var(--padding-1);
+        input {
+            font-size: var(--font-size-14);
+        }
+    }
+
+    .note {
+        font-size: var(--font-size-10);
+        margin-block-start: 4px;
+        margin-block-end: 4px;
+        color:var(--color-font-light);
+    }
+    .note.warning {
+        color: var(--color-primary);
+    }
+}
+
+.placeholder-center {
+    input::-ms-input-placeholder {
+        text-align: center;
+    }
+    input::-webkit-input-placeholder {
+        text-align: center;
+    }
+}

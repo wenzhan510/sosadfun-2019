@@ -1,0 +1,15 @@
+[data-theme="dark"] {
+  --color-primary: white;
+}
+
+.theme-dark {
+  color: white;
+
+  .page {
+    background-color: grey;
+  }
+
+  .card {
+    background-color: black;
+  }
+}

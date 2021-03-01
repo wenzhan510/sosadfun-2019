@@ -1,0 +1,27 @@
+.dropdown {
+  background-color: transparent;
+  font-size: var(--font-size-14);
+  cursor: default;
+  .dropdown-trigger {
+    font-family: var(--font-family-medium);
+    .icon {
+      margin-left: 4px;
+    }
+  }
+  .dropdown-trigger.is-active {
+    color: var(--color-primary)
+  }
+  .dropdown-menu {
+    background-color: var(--color-bg-front);
+    position: absolute;
+    box-shadow: 0px 0px 9px -1px #c5c5c5;
+    z-index: 1;
+  }
+  .item {
+    padding: var(--padding-1);
+  }
+  .item.selected {
+    color: var(--color-primary)
+  }
+  
+}

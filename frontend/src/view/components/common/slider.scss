@@ -1,0 +1,16 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow-x: auto;
+
+  -ms-overflow-style: none; //IE 10+
+  overflow: -moz-scrollbars-none; //Firefox
+  &::-webkit-scrollbar {
+    display: none; // chrome and safari
+  }
+
+  .slider-item {
+    margin: 2px;
+  }
+}

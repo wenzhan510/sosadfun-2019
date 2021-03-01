@@ -1,0 +1,40 @@
+.reward-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-size: var(--font-size-18);
+        padding-bottom: 12px;
+    }
+    .tip {
+        font-size: var(--font-size-12);
+        color: #999999;
+        line-height: 12px;
+        padding-bottom: 10px;
+    }
+    .reward-item {
+        display: flex;
+        align-items: center;
+        input {
+            margin: 0px 8px;
+            width: 16px;
+            height: 16px;
+        }
+        span {
+            color: var(--color-primary);
+            margin: 0 5px;
+        }
+        height: 30px;
+        line-height: 30px;
+        font-size: var(--font-size-14);
+    }
+    .count {
+        margin: 20px;
+        padding-bottom: 4px;
+        background-color: transparent;
+        text-align: center;
+        border-bottom: 1px solid rgba(51, 51, 51, 1);
+        width: 263px;
+        font-size: var(--font-size-12);
+    }
+}

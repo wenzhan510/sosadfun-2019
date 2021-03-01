@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["dom", "es6", "es2015", "es5", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "rootDirs": ["src"],
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
+    ],
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    // "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "paths": {
+      "*": [
+        "./types/*"
+      ]
+  },
+  "include": [
+    "src/**/*",
+    "types", "bin/parse-selector-php.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

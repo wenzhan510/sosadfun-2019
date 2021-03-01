@@ -1,0 +1,92 @@
+.comps-thread-thread-profile {
+    .primary-color {
+        color: var(--color-primary);
+    }
+    .title-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--margin-size-16);
+        align-items: center;
+        .title {
+            font-size: var(--font-size-16);
+            line-height: var(--font-size-18);
+            font-family: var(--font-family-medium);
+            display: flex;
+            justify-content: flex-start;
+            .tags {
+                margin-left: 4px;
+            }
+        }
+        .author {
+            font-size: var(--font-size-14);    
+            line-height: var(--font-size-14);
+        }
+    }
+    .brief {
+        font-size: var(--font-size-14);    
+        line-height: var(--font-size-14); 
+        margin-bottom: var(--margin-size-16);
+    }
+    .tags-row, .data-row {
+        font-size: var(--font-size-10);
+        line-height: var(--font-size-10);
+        color: var(--color-font-light);
+    }
+    .tags-row {
+        margin-bottom: var(--margin-size-8);
+    }
+    .data-row {
+        span:not(last-child) {
+            margin-right: var(--margin-size-8);
+        }
+        span {
+            i {
+                margin-right: 3px;
+                color: var(--color-font-light);
+            }
+        }
+    }
+    > .book-title {
+        margin-top: var(--margin-size-16);
+        margin-bottom: var(--margin-size-8);
+    }
+
+    .body, .last-component {
+        font-size: var(--font-size-14);
+        line-height: 21px;
+    }
+
+    .events {
+        margin-top: var(--margin-size-16);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--margin-size-8);
+    }
+    
+    .rewards-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-size-10);
+        line-height: var(--line-height-small);
+        .rewards {
+            flex: 1;
+            color: var(--color-font-light);
+        }
+        .expand {
+            color: var(--color-font);
+            i {
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .modes {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--margin-size-16);
+        .button:first-child {
+            margin-right: 39px;
+        }
+    }
+}

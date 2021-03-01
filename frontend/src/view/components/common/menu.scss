@@ -1,0 +1,12 @@
+.components-common-menu {
+  margin-bottom: 8px;
+  .icon-with-right-text {
+    i {
+      font-size: var(--font-size-16);
+    }
+    span {
+      margin: var(--margin-1);
+      font-size: var(--font-size-14);
+    }
+  }
+}

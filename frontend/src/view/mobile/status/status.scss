@@ -1,0 +1,46 @@
+.mobile-status {
+  #compose-status {
+    background-color: white;
+    .publish-btn {
+      border-top: 1px var(--color-divider) solid;
+      text-align: right;
+      padding: var(--padding-xsmall);
+    };
+  }
+
+  .tiddings-tabs {
+    padding: var(--padding-1);
+  }
+  .tab-btn {
+    background: transparent;
+    color: var(--color-font);
+    border-radius: 20px;
+    width: 80px;
+    height: 24px;
+  }
+  .tab-btn-active {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .status-item {
+    .status-author {
+      font-size: var(--font-size-12);
+      color: var(--color-font-light);
+      display: flex;
+      justify-content: space-between;
+    }
+    .status-content {
+      font-size: var(--font-size-14);
+      overflow: hidden;
+    }
+  }
+
+  .list {
+    border: 0;
+    box-shadow: none !important;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+// this file is for both pc and mobile styles
+
+:root {
+  --radius-base: 4px;
+  --radius-big: 11px;
+  --radius-bigger: 15px;
+  --radius-biggest: 19px;
+
+  --font-family-regular: PingFangSC-Regular;
+  --font-family-bold: PingFangSC-Semibold;
+  --font-family-medium: PingFangSC-Medium;
+  --font-family-light: PingFangSC-Light;
+
+
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+
+  // todo: base/big margin, padding ...etc
+  --padding-xsmall: 8px 16px;
+  --padding-small: 12px 12px;
+  --padding-1: 12px 16px;
+  --padding-2: 16px 16px;
+
+  --margin-1: 0 12px;
+  --margin-2: 0 16px;
+  --margin-3: 8px 16px; 
+  --margin-4: 12px 0 16px 0;
+
+  --margin-right-size-12: 12px; // right margin
+  --margin-size-8: 8px;
+  --margin-size-12: 12px;
+  --margin-size-14: 14px;
+  --margin-size-16: 16px;
+  --margin-size-24: 24px;
+  --margin-size-32: 32px;
+
+  // --top-margin-1: 8px;
+  // --top-margin-2: 12px;
+  // --top-margin-3: 14px;
+  // --top-margin-4: 16px;
+  // --top-margin-5: 24px;
+  // --top-margin-6: 32px;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-12);
+}
+
+input {
+  border: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  &:active {
+    text-decoration: none;
+  }
+}
+
+i {
+  font-size: var(--font-size-14);
+}
+
+// set h1, h2, h3, h4, h5 font-size, font-family
+title {
+  font-family: var(--font-family-bold)
+}
+
+
+b {
+  font-family: var(--font-family-medium);
+  font-weight: bold;
+  color: var(--color-font);
+}
+
+small {
+  font-size: var(--font-size-small);
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 0.25px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.25px solid #3333334D;
+}
+button {
+  border: none;
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-14);
+}
+button:active, button:focus {
+  outline: none;
+  border-style: outset;
+}
+
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+// no highligth blue upon selected
+.noSelect {
+  // -webkit-touch-callout: none;
+  // -webkit-user-select: none;
+  // -khtml-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
+  // user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

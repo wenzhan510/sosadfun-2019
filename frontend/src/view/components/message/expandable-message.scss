@@ -1,0 +1,42 @@
+.expandable-message{
+  background-color: white;
+  margin-top: 4px;
+  padding: 16px;
+
+  .expandable-message-content{
+    font-size: 0.95em;
+    color: #666666;
+
+    .expandable-message-footer{
+      margin-top: 10px;
+      height: 0.85em;
+
+      span{
+        font-size: 0.85em;
+        float: right;
+      }
+    }
+  }
+
+  .expandable-message-title{
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  
+    .expandable-message-title-text{
+      width: 90%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .bold-title{
+      font-weight: bold;
+    }
+
+    .icon{
+      float: right;
+    } 
+  }
+
+}

@@ -1,0 +1,46 @@
+.comps-common-accordion {
+  .accordion-title {
+    padding: 12px 0;
+    margin-bottom: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .arrow {
+      float: right;
+    }
+  }
+
+  @keyframes accordionIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9) rotateX(-60deg);
+      transform-origin: 50% 0;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes accordionOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(0.9) rotateX(-60deg);
+    }
+  }
+
+  .animateIn {
+    animation: accordionIn 0.2s normal ease-in-out both 1; 
+  }
+  .animateOut {
+    animation: accordionOut 0.2s alternate ease-in-out both 1;
+  }
+}

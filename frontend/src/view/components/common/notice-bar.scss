@@ -1,0 +1,36 @@
+.notice-bar-wrapper {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #fefcec; 
+  color: #f76a24;
+  align-items: center;
+  
+  .action {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .notice-icon {
+    margin-right: 10px;
+  }
+
+  .notice-content-wrapper {
+    overflow: hidden;
+    .notice-content {
+      position: relative;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    @keyframes wordsLoop {
+      0% {
+          transform: translateX(70%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+    }
+  }
+}

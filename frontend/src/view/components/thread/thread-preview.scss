@@ -1,0 +1,61 @@
+@mixin textOneLine {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin textLimitLine ($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+$lineDist: 5px;
+
+.first-line {
+    display: flex;
+    align-items: center;
+    .thread-title {
+        font-size: 20px;
+        font-weight: bold;
+        @include textOneLine();
+    }
+    .tags {
+        margin-bottom: 0;
+        margin-right: 5px;
+        flex-wrap: nowrap;
+    }
+    .tag {
+        margin-bottom: 0;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+}
+.second-line {
+    font-size: 15px;
+    margin-top: $lineDist;
+    @include textLimitLine(3);
+}
+.third-line {
+    font-style: inherit;
+    color: grey;
+    font-size: 12px;
+    margin-top: $lineDist;
+    @include textOneLine();
+}
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    color: grey;
+    margin-top: $lineDist;
+    .counters {
+        i {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.button-container.inline {
+  display: inline-block;
+}
+.button {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-16);
+  font-family: var(--font-family-medium);
+  text-align: center;
+  padding: 0 26px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  i {
+    margin-right: 4px;
+  }
+}
+
+.button.ellipse {
+  border-radius: var(--radius-bigger);
+  height: 30px;
+}
+
+.button.high {
+  border-radius: var(--radius-biggest);
+  height: 38px;
+}
+
+.button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button.small {
+  width: 108px;
+}

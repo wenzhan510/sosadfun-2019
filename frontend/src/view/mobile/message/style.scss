@@ -1,0 +1,130 @@
+.right-align {
+  text-align: right;
+}
+
+.list {
+  .item-container {
+    .item-first-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--font-size-14);
+    }
+  
+    .item-brief {
+      text-align: left;
+      font-size: var(--font-size-12);
+    }
+  }
+}
+
+.dropdown .dropdown-menu {
+  width: 200px;
+}
+
+.message-list {
+  margin-top: var(--margin-size-8);
+  background: transparent;
+  .list-item {
+    background: white;
+  }
+  
+  .left{
+    width: 65%;
+  }
+  .item-first-line .right{
+    color: var(--color-font-light);
+    font-size: var(--font-size-10);
+    display: inline-flex;
+    align-items: center;
+    margin-left: var(--margin-size-8);
+    text-align: right;
+    .delete-btn{
+      color: var(--color-primary);
+      margin-right: var(--margin-size-8);
+      min-width: 40px;
+      margin-top: -2px;
+    }
+    .delete-btn:hover{
+      font-weight: bold;
+    }
+  }
+  .item-brief {
+    color: var(--color-font-light);
+  }
+}
+
+.blank-block {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    flex-grow: 1;
+  }
+  .right {
+    font-size: var(--font-size-14);
+    color: var(--color-primary);
+    padding: var(--padding-1);
+  }
+}
+
+.msg-page {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .unread {
+    font-weight: bold;
+  }
+
+  .one-line-truncation {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: var(--margin-size-8);
+  }
+
+  .dialogue-card {
+    // padding: '20px',
+    background-color: '#f4f5f9';
+    height: 100%;
+    overflow-y: scroll;
+    flex-grow: 1;
+    background-color: transparent !important;
+    // margin-bottom: 0 !important;
+
+    .message-item {
+      margin-bottom: var(--margin-size-16);
+      .poster-name {
+        margin-bottom: 1em;
+        font-weight: bold;
+      }
+      .from-me {
+        float: right;
+      }
+    }
+  }
+  
+  
+  #pm-text-box {
+    height: auto !important;
+    padding: var(--padding-xsmall);
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+  
+    .quill {
+      flex-grow:1;
+      display: inline-block;
+      .ql-size.ql-expanded .ql-picker-options {
+        top: -418%;
+      }
+      .ql-color-picker.ql-expanded .ql-picker-options {
+        top: -480%;
+      }
+    }
+    span.sendbutton {
+      // font-size: 1.3em;
+      margin: 0.5em 0 0 0.5em;
+    }
+  }
+}

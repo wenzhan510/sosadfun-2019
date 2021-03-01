@@ -1,0 +1,43 @@
+.square {
+    .loading {
+        position: relative;
+        padding: 64px;
+      
+        .spinner{
+            
+          position: absolute;
+          display: inline-block;
+          height:50px;
+          width:50px;
+          top:50%;
+          left:50%;
+          margin-left: -25px;
+          margin-top: -25px;
+      
+          .circular {
+            -webkit-animation:loading-rotate 2s linear infinite;
+            animation:loading-rotate 2s linear infinite;
+                  
+            .path {
+              -webkit-animation:loading-dash 1.5s ease-in-out infinite;
+              animation:loading-dash 1.5s ease-in-out infinite;
+              stroke-dasharray:90,150;
+              stroke-dashoffset:0;
+              stroke-width:2;
+              stroke:rgb(54, 55, 56);
+              stroke-linecap:round
+                  
+            }
+          }
+        }
+      }
+}
+
+@-webkit-keyframes 
+loading-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@keyframes 
+loading-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@-webkit-keyframes 
+loading-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40px}100%{stroke-dasharray:90,150;stroke-dashoffset:-120px}}
+@keyframes 
+loading-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40px}100%{stroke-dasharray:90,150;stroke-dashoffset:-120px}}

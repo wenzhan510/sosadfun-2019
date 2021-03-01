@@ -1,0 +1,26 @@
+.route-menu {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 4px 0;
+
+  .item {
+    color: var(--color-font);
+    padding: 12px;
+    font-size: var(--font-size-14);
+
+    i {
+      $size: 20px;
+      height: $size;
+      width: $size;
+      font-size: $size;
+    }
+  }
+  .item.selected {
+    color: var(--color-primary);
+  }
+}

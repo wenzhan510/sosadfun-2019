@@ -1,0 +1,20 @@
+.thread-publish-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 31px;
+    bottom: 69px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    z-index: 2;
+    cursor: pointer;
+    p {
+        margin: 0;
+        color: var(--color-font);
+        font-size: var(--font-size-12);
+        text-align: center;
+        font-family: var(--font-family-medium);
+        line-height: calc((50px - (8px * 2)) / 2);
+    }
+}

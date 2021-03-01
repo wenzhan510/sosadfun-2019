@@ -1,0 +1,166 @@
+.reg {
+  margin-bottom: 0;
+  min-height: 100%;
+  p {
+    color: var(--color-font-light);
+  }
+  p:first-child {
+    margin-top: 0;
+  }
+  .title {
+    color: var(--color-font);
+    font-size: var(--font-size-18);
+    margin: 0;
+  }
+  .sub-title {
+    color: var(--color-font);
+    font-size: var(--font-size-14);
+  }
+  a, .small-warning {
+    color: var(--color-primary);
+    font-size: var(--font-size-10);
+    margin-block-start: var(--margin-size-12);
+    margin-block-end: var(--margin-size-12);
+  }
+
+  #quiz {
+    font-size: var(--font-size-14);
+    color: var(--color-font);
+    .quiz-question {
+      p {
+        color: var(--color-font);
+        margin-block-start: var(--margin-size-12);
+        margin-block-end: var(--margin-size-12);
+      }
+      .quiz-option {
+        margin: var(--margin-size-14) 0;
+      }
+      margin-bottom: 26px;
+    }
+  }
+
+  #reg-mail1-info {
+    margin-bottom: var(--margin-size-32);
+  }
+
+  .input-text {
+    background-color: var(--color-bg-base);
+    padding: var(--padding-1);
+    display: flex;
+    input[type="text"],input[type="email"],input[type="password"],input[type="username"] {
+      flex-grow: 1;
+      background-color: var(--color-bg-base);
+      font-size: var(--font-size-14);
+    }
+
+    #resend-token {
+      width: 90px;
+      margin: var(--margin-2);
+    }
+    #resend-token:hover {
+      font-weight: bold;
+    }
+  }
+  #reg-code-input.input-text {
+    margin-top: var(--margin-size-32);
+  }
+  .creat-account-input {
+    margin: var(--margin-size-24) 0;
+    p {
+      font-size: var(--font-size-14);
+      color: var(--color-font);
+      margin-bottom: var(--margin-size-8);
+    }
+    .input-text {
+      margin: var(--margin-size-8) 0;
+    }
+    .note {
+      font-size: var(--font-size-12);
+      color: var(--color-font-light);
+      margin: 0;
+    }
+    .note.warning {
+      color: var(--color-primary);
+    }
+    .no-select {
+      user-select: none;
+    }
+  }
+  input[type="radio"] {
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+  }
+  .checkboxes{
+    margin: var(--margin-size-24) 0 ;
+    .checkbox {
+      color: var(--color-font-light);
+      margin: var(--margin-size-8) 0;
+    }
+  }
+  
+
+  // the textarea could possibly moved to common component
+  #essay-textarea{
+    display: flex;
+    padding: var(--padding-1);
+    background: var(--color-bg-base);
+    textarea {
+      flex-grow: 1;
+      height: 260px;
+      border: none;
+      background: var(--color-bg-base);
+      resize: none;
+    }
+    textarea:focus {
+      outline: none;
+    }
+  }
+
+
+
+  .reg-option {
+    margin-top: 32px;
+  }
+
+  .accordion{
+    .accordion-title {
+      color: var(--color-font-light);
+    }
+    .warning-content {
+      font-size: var(--font-size-10);
+    }
+  }
+
+  #verify-token {
+    margin: 24px 0;
+  }
+
+  .red {
+    color: var(--color-primary);
+  }
+
+  #application-result {
+    p {
+      font-size: var(--font-size-14);
+      color: var(--color-font);
+      margin-bottom: var(--top-margin-8);
+    }
+    a {
+      font-size: var(--font-size-12);
+    }
+  }
+
+  .popup-content {
+    p.message {
+      color: var(--color-font);
+      font-size: var(--font-size-14);
+    }
+    p.title {
+      text-align: center;
+    }
+    .bottom-button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

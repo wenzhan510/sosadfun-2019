@@ -1,0 +1,29 @@
+.ql-snow {
+  background-color: white;
+  .ql-editor {
+    height:150px;
+  }
+  .ql-toolbar.ql-snow {
+    border: none;
+  }
+  .ql-container.ql-snow {
+    border: none;
+  }
+}
+.ql-toolbar.ql-snow {
+  border: none;
+}
+.ql-container.ql-snow {
+  border: none;
+}
+
+
+.ql-bubble {
+  background-color: var(--color-bg-base);
+  padding: 12px 12px;
+  border-radius: 16px;
+  .ql-editor {
+    padding:0 0;
+    max-height: 65px;
+  }
+}

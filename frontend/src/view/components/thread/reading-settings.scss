@@ -1,0 +1,33 @@
+.reading-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        font-size: var(--font-size-18);
+        padding-bottom: 12px;
+        font-weight: bold;
+    }
+    .item-name {
+        font-size: var(--font-size-14);
+        font-weight: bold;
+    }
+    .radios {
+        display: flex;
+        margin-bottom: 8px;
+        .radio {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            line-height: 30px;
+            font-size: var(--font-size-14);
+            input {
+                margin: 0 8px 0 0;
+                width: 16px;
+                height: 16px;
+            }
+            &:not(:last-child) {
+                padding-right: 24px;
+            }
+        }
+    }
+}

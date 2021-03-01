@@ -1,0 +1,31 @@
+.tag {
+  border-radius: var(--radius-base);  
+  height: 30px;
+  padding: 0 8px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: var(--font-size-14);
+}
+.tag.small {
+  height: 20px;
+  padding: 0 8px;
+  line-height: 20px;
+  font-size: var(--font-size-12);
+}
+.tag.tiny {
+  height: 14px;
+  background: rgba(221,223,230,1);
+  border-radius: 9px;
+  line-height: 14px;
+  font-size: var(--font-size-10);
+}
+.tags {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .tag:not(:last-child) {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+}

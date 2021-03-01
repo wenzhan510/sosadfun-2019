@@ -1,0 +1,83 @@
+.homework-preview {
+    padding: var(--padding-1);
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 8px;
+        font-weight: bold;
+        .title-left {
+            font-size: var(--font-size-16);
+            line-height: 18px;
+        }
+        .title-right {
+            font-size: var(--font-size-14);
+            color: var(--color-primary);
+            line-height: 14px;
+        }
+    }
+    .homeworks {
+        display: flex;
+        overflow-x: auto;
+        .homework {
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            width: 80px;
+            height: 100px;
+            min-width: 80px;
+            min-height: 100px;
+            background-color: var(--color-bg-front);
+            .active-tag {
+                height: 14px;
+                width: 46px;
+                background: #DDDFE6;
+                border-radius: 4px 0 4px 0;
+                text-align: center;
+                .tag-text {
+                    font-weight: bold;
+                    font-size: var(--font-size-10);
+                    line-height: var(--font-size-10);
+                }
+                .is-active-tag {
+                    color: var(--color-primary);
+                }
+                .no-active-tag {
+                    color: var(--color-font-light);
+                }
+            }
+            .detail {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                font-size: var(--font-size-10);
+                line-height: var(--font-size-10);
+                padding: 8px;
+                .title {
+                    color: var(--color-font-light);
+                }
+                .topic-container {
+                    flex: 1;
+                    .topic {
+                        font-size: var(--font-size-14);
+                        line-height: 16.8px;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                    }
+                }
+                .footer {
+                    font-size: var(--font-size-10);
+                    color: var(--color-font-light);
+                    i {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+        .homework:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}

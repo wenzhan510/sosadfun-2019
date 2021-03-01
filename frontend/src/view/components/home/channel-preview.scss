@@ -1,0 +1,40 @@
+.channel-preview {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .title {
+    margin: 0;
+    padding: var(--padding-1);
+    width: 100%;
+    text-align: left;
+    font-size: var(--font-size-16);
+    font-weight: bold;
+  }
+
+  .list {
+    .item-container {
+
+      .item-first-line {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-size-14);
+
+        .item-title {
+          font-size: var(--font-size-14);
+          font-weight: bold;
+        }
+        .item-author {
+          text-align: right;
+          width: 100px;
+          font-size: var(--font-size-12);
+        }
+      }
+
+      .item-brief {
+        text-align: left;
+        font-size: var(--font-size-12);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.comps-thread-chapter-list {
+  .title-container {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: var(--font-size-16);
+      line-height: calc(var(--font-size-18) - 4px);
+      font-family: var(--font-family-medium);
+      width: fit-content;
+      border-bottom: 3px solid var(--color-primary);
+      margin-bottom: 12px;
+    }
+    .order {
+      color: var(--color-font-light);
+      font-size: var(--font-size-10);
+      line-height: var(--font-size-10);
+      .divider {
+        height: 10px;
+        margin: 0 12px;
+      }
+      .bold {
+        color: var(--color-font);
+        font-family: var(--font-family-medium);
+      }
+    }
+  }
+
+  .list-item {
+    font-size: var(--font-size-14);
+    line-height: var(--font-size-14);
+    padding: var(--margin-size-8) 0;
+    .index {
+      font-weight: 600;
+      font-family: var(--font-family-bold);
+      margin-right: 12px;
+    }
+  }
+}

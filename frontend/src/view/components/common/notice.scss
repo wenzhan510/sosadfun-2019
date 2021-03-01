@@ -1,0 +1,18 @@
+.comp-common-notice {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 999;
+    .notice {
+        border: black 1px solid;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 4px;
+        background-color: white;
+        text-align: center;
+        width: fit-content;
+        padding: 4px 16px;
+        margin: 4px auto;
+    }
+}

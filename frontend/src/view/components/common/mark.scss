@@ -1,0 +1,27 @@
+
+.comps-common-mark {
+  .comps-common-mark-container {
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    i {
+      font-size: 20px;
+      margin-right: var(--margin-size-8);
+    }
+    color: white;
+    .full {
+      color: var(--color-primary);
+    }
+    .half:before {
+        background: -webkit-linear-gradient(180deg,white 0%, white 50%,var(--color-primary) 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .frame {
+      color:var(--color-primary);
+      left:0;
+      position: absolute;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0.19
+    environment:
+      - MYSQL_ROOT_PASSWORD=$DB_PASSWORD
+      - MYSQL_DATABASE=$DB_DATABASE
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    ports:
+      - 3306:3306
+
+  dbadmin:
+    image: phpmyadmin/phpmyadmin:4.9
+    environment:
+      - PMA_HOST=db
+    links:
+      - db
+    ports:
+      - 8001:80
+
+  sosad:
+    build: .
+    environment:
+      - DB_HOST=db
+      - DB_PORT=$DB_PORT
+    links:
+      - db
+    ports:
+      - 8000:8000

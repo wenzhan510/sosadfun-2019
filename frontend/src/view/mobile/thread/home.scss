@@ -1,0 +1,26 @@
+.mobile-thread-index {
+  .channel-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+      .logo {
+        width: 44px;
+        height: 44px;
+        font-size: var(--font-size-20);
+        line-height: 44px;
+        font-family: var(--font-family-medium);
+        text-align: center;
+        margin-bottom: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .text {
+        font-size: var(--font-size-12);
+        color: var(--color-font);
+        line-height: var(--line-size-12);
+        text-align: center;
+      }
+    }
+  }
+}

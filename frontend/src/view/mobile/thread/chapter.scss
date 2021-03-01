@@ -1,0 +1,33 @@
+.mobile-forum-chapter {
+    .navigators {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        .book-title {
+            margin: var(--margin-size-16) auto;
+        }
+    }
+
+    .annotation {
+        hr {
+            margin: 16px 0;
+        }
+        .body {
+            font-size: var(--font-size-12);
+            line-height: var(--font-size-18);
+            color: var(--color-font-light);
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: flex-end;
+        margin: var(--margin-size-16) 0;
+        
+        div:not(:first-child) {
+            margin-left: 4px;
+        }
+    }
+}

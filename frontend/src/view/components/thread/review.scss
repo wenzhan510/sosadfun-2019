@@ -1,0 +1,39 @@
+.review {
+  .left-margin {
+    margin-left: var(--margin-size-16);
+    margin-right:var(--margin-size-16);
+  }
+  .section{
+    margin: var(--margin-4);
+    .section-title {
+      font: var(--font-family-medium);
+      font-size: var(--font-size-16);
+      font-weight: bold;
+      margin: var(--margin-3);
+    }
+    .comps-common-mark {
+      display: inline-block;
+    }
+    label {
+      font-size: var(--font-size-14);
+    }
+    .recommend-to-others {
+      display: inline-block;
+      margin-left: var(--margin-size-32);
+    }
+
+    .section-item {
+      margin-top: var(--margin-size-8);
+    }
+    .components-common-input-text {
+      .container{
+        background-color: white;
+        margin-bottom: 4px;
+      }
+      .note {
+        margin-left: var(--margin-size-16);
+        margin-right:var(--margin-size-16);
+      }
+    }
+  }
+}

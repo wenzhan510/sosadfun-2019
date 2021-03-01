@@ -1,0 +1,72 @@
+// customize css themes
+
+[data-theme="light"] {
+  --color-primary: #ce565d;
+
+  --color-bg-base: #f4f5f9;
+  --color-bg-front: white;
+
+  --color-font: #333333;
+  --color-font-light: #666666;
+  --color-placeholder: #999999;
+  --color-font-disabled: #999999;
+  --color-divider: #4D333333;
+  --color-border: #dbdbdb;
+}
+
+.theme-light {
+  color: var(--color-font)
+  p {
+    color: var(--color-font-light);
+  }
+
+  .page {
+    background-color: var(--color-bg-base);
+  }
+  .card {
+    background-color: var(--color-bg-front);
+  }
+  .button, .tag {
+    background-color: #dddfe6;
+    color: var(--color-font);
+  }
+  .button.color-primary, .tag.color-primary {
+    background-color: #ce565d;
+    color: white;
+  }
+  .button.color-pure, .tag.color-pure {
+    background-color: white;
+    color: var(--color-font);
+  }
+  .button.color-light {
+    background-color: #f4f5f9;
+  }
+
+  .book-title {
+    text-decoration-color: var(--color-primary);
+    text-decoration: line;
+    font-size: var(--font-size-16);
+    line-height: calc((var(--font-size-16)) - 4px);
+    font-weight: 500;
+    width: fit-content;
+    border-bottom: var(--color-primary) solid 3px;
+  }
+  // 论坛主页的频道入口
+  .channel-index {
+    .item .logo {
+      background: linear-gradient(319deg,rgba(221,223,230,1) 0%,rgba(255,255,255,1) 100%);
+      box-shadow: 0px 0px 4px 0px rgba(221,223,230,0.6);
+      color: rgba(202,207,225,1);
+    }
+  }
+  // 发文发帖按钮
+  .thread-publish-button {
+    background: linear-gradient(319deg,rgba(221,223,230,1) 0%,rgba(255,255,255,1) 100%);
+    box-shadow: 0px 0px 6px 0px rgba(221,223,230,0.6);
+  }
+  // 频道页面tags
+  .top-threads .tag {
+    background-color: rgba(3, 11, 35, 1);
+    color: white;
+  }
+}

@@ -1,0 +1,46 @@
+.toast {
+    display: flex;
+    background-color: var(--color-bg-base);
+    align-items: center;
+    .content {
+        flex: 1;
+        font-size: var(--font-size-14);
+        line-height: 25px;
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow: hidden;
+        padding: 13px 0;
+    }
+    border-bottom: 1px solid #DDDFE6;
+    i {
+        padding: 16px;
+        font-size: 20px;
+    }
+}
+
+$error-color: #CE565D;
+$warning-color: #F08E5E;
+$success-color: #2DD09F;
+$info-color: #DDDFE6;
+@mixin toast-color($color) {
+    .icon-info {
+        color: $color;
+    }
+    border-top: 4px solid $color;
+}
+
+.toast.error {
+    @include toast-color($error-color)
+}
+
+.toast.warning {
+    @include toast-color($warning-color)
+}
+
+.toast.success {
+    @include toast-color($success-color)
+}
+
+.toast.info {
+    @include toast-color($info-color)
+}
